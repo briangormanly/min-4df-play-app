@@ -1,19 +1,12 @@
 package init;
 
-import com.fdflib.model.entity.FdfEntity;
 import com.fdflib.persistence.database.DatabaseUtil;
 import com.fdflib.service.FdfServices;
 import com.fdflib.util.FdfSettings;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
-import models.Role;
-import models.User;
-import models.UserRole;
 import play.Logger;
 import play.api.Environment;
-import services.RoleService;
-import services.UserService;
-import tyrex.security.container.helper.RolesRealm;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +19,7 @@ public class DbInit {
 
     @Inject
     public DbInit(Environment environment) {
-        Logger.info("Application start");
+        Logger.info("4DFLib Application start");
 
         // initialize 4DFLib
         // Create a array that will hold the classes that make up our 4df data model
